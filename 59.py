@@ -1,0 +1,6 @@
+import re
+def change_date(date):
+        return re.sub(r'(\d{4})-(\d{1,2})-(\d{1,2})', '\\3-\\2-\\1', date)
+date = "2002-10-27"
+print("Original date in YYY-MM-DD Format: ",date)
+print("New date in DD-MM-YYYY Format: ",change_date(date))
