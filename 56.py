@@ -1,5 +1,5 @@
 import re
-p=re.compile('\d{3}[-|\.|\s]\d{3}[-|\.|\s]\d{4}')
+p=re.compile('\d{3}-\d{3}-\d{4}')
 r=p.findall('3345-766-907 ,886-245-9772')
 print(r)
 
